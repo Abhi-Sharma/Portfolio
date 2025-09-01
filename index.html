@@ -6,12 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PORTFOLIOe</title>
+    <title>Portfolio_Abhi_Sharma</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/unicons.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
@@ -22,48 +24,42 @@
   <body>
 
     <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>Abhi Sharma</a>
+   <nav class="navbar navbar-expand-sm navbar-light fixed-top custom-navbar">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">
+      <img src="profile.jpeg" alt="Abhi Sharma" class="brand-logo">
+      <span class="brand-name">Abhi Sharma</span>
+    </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
-                    </li>
-<li class="nav-item">
-  <a href="as.pdf" class="nav-link" target="_blank">
-    <span data-hover="Resume">Resume</span>
-  </a>
-</li>
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="as.pdf" class="nav-link" target="_blank">Resume</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
 
+      <!-- Dark Mode -->
+      <ul class="navbar-nav ml-lg-auto">
+        <li class="nav-item">
+          <div class="color-mode d-lg-flex align-items-center">
+            <i class="color-mode-icon"></i>
+            <span>Change Mode</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
-                        Change mode
-                      </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <!-- ABOUT -->
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
@@ -119,9 +115,9 @@ at MSRIT, passionate about building scalable web applications and solving comple
                 <small>Next.js, Clerk, GenAI APIs, Neon (PostgreSQL), ShadCN</small>
               </h3>
               <ul>
-                <li>Developed a career coaching platform providing industry insights refreshed weekly.</li>
-                <li>Implemented features like resume builder, cover letter generation, and AI-driven mock interviews.</li>
-                <li>Designed a scalable backend with PostgreSQL and a responsive UI with ShadCN, improving accessibility across devices.</li>
+                <p>Developed a career coaching platform providing industry insights refreshed weekly.</p>
+                <p>Implemented features like resume builder, cover letter generation, and AI-driven mock interviews.</p>
+                <p>Designed a scalable backend with PostgreSQL and a responsive UI with ShadCN, improving accessibility across devices.</p>
               </ul>
               <!-- Project Links -->
               <p>
@@ -140,8 +136,8 @@ at MSRIT, passionate about building scalable web applications and solving comple
                 <small>HTML, CSS, JavaScript</small>
               </h3>
               <ul>
-                <li>Built a responsive website showcasing projects, skills, and achievements, improving personal branding.</li>
-                <li>Integrated coding profiles and contact details for enhanced recruiter visibility.</li>
+                <p>Built a responsive website showcasing projects, skills, and achievements, improving personal branding.</p>
+                <p>Integrated coding profiles and contact details for enhanced recruiter visibility.</p>
               </ul>
               <!-- Project Links -->
               <p>
@@ -212,7 +208,8 @@ at MSRIT, passionate about building scalable web applications and solving comple
                             </div>
                             <div class="timeline-info">
                                 <h3><span>BE IN CSE</span><small>MSRIT</small></h3>
-                                <p>Graduate in 2027</p>
+                                <p>Graduate in 2027 <br> Current CGPA:- 9.22</p>
+                                
                             </div>
                         </div>
                         
@@ -389,6 +386,12 @@ at MSRIT, passionate about building scalable web applications and solving comple
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
   </body>
 </html>

@@ -664,3 +664,124 @@ b, strong {
     vertical-align: top;
   }
 }
+.about-image img {
+  border: 5px solid #fff;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease-in-out;
+}
+.about-image img:hover {
+  transform: scale(1.05);
+}
+.about h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.about .btn-cta {
+  background: #fff;
+  color: #1d2671;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.about .btn-cta:hover {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+
+
+
+/* Navbar Styling */
+.custom-navbar {
+  background: rgba(255, 255, 255, 0.1); /* Transparent */
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  padding: 15px 0;
+  box-shadow: none;
+}
+
+.custom-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.8); /* Solid on scroll */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Brand */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: inherit !important; /* Inherit color from mode */
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid currentColor;
+}
+
+/* Links */
+.nav-link {
+  color: inherit !important; /* Adapt to mode */
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #ff9800;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #ff9800 !important;
+}
+
+/* Toggler */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* Dark Mode */
+.dark-mode .custom-navbar,
+.dark-mode .color-mode {
+  color: #fff;
+}
+
+.dark-mode .brand-logo {
+  border-color: #fff;
+}
+
+/* Light Mode */
+.light-mode .custom-navbar,
+.light-mode .color-mode {
+  color: #000; /* Black text for visibility */
+}
+
+.light-mode .brand-logo {
+  border-color: #000;
+}
+
+.light-mode .nav-link {
+  color: #333 !important;
+}
+
+body.dark-mode p {
+    
+  color: #dcdcdc; /* dark white shade */
+}
