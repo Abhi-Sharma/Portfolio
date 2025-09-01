@@ -1,4 +1,4 @@
-/*
+/* 
 
 Tooplate 2115 Marvel
 
@@ -25,16 +25,53 @@ body {
 .coding-links {
   display: flex;
   justify-content: space-around;
-  gap: 30px; /* Adjust spacing between links */
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
 .coding-links a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: #f9f9f9;
+  padding: 20px 25px;
+  border-radius: 12px;
+  text-align: center;
   text-decoration: none;
-  color: #333; /* Adjust link color */
+  color: #212121;
+  font-weight: 600;
+  font-size: 16px;
+  width: 160px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+
+.coding-links a img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect */
+.coding-links a:hover {
+  transform: translateY(-5px);
+  color: #ffc200;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.coding-links a:hover img {
+  transform: scale(1.1);
+}
+
+/* Dark mode */
+.dark-mode .coding-links a {
+  background: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .coding-links a img {
+  filter: brightness(0) invert(1); /* icons become white */
+}
+
 #skills {
   padding: 40px 20px;
   text-align: center;
@@ -75,11 +112,7 @@ body {
 }
 
 /* JavaScript to set the width of skill-level based on data-level attribute */
-.coding-links img {
-  width: 80px; /* Adjust image size */
-  height: auto;
-  margin-bottom: 10px;
-}
+
 .small-text {
   color: #5b5b5b;
   font-size: 14px;
