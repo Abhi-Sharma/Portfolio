@@ -82,6 +82,25 @@
 
                         <p>Aspiring Software Development Engineer (SDE) and 3rd-year Computer Science Engineering student
 at MSRIT, passionate about building scalable web applications and solving complex problems through data structures and algorithms.</p>
+
+                        <div class="about-meta mt-4">
+                          <div class="about-meta-item">
+                            <i class="uil uil-phone"></i>
+                            <a href="tel:+919149507485">+91 9149507485</a>
+                          </div>
+                          <div class="about-meta-item">
+                            <i class="uil uil-envelope-alt"></i>
+                            <a href="mailto:abhisharma.rediffmail@gmail.com">abhisharma.rediffmail@gmail.com</a>
+                          </div>
+                          <div class="about-meta-item">
+                            <i class="uil uil-linkedin"></i>
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                          </div>
+                          <div class="about-meta-item">
+                            <i class="uil uil-github"></i>
+                            <a href="https://github.com/Abhi-Sharma" target="_blank" rel="noopener">GitHub</a>
+                          </div>
+                        </div>
                         
                     </div>
                 </div>
@@ -106,52 +125,86 @@ at MSRIT, passionate about building scalable web applications and solving comple
       <div class="col-lg-12 col-12">
         <h2 class="mb-4">Projects</h2>
 
-        <div class="timeline">
+        <ul class="nav nav-pills mb-4 justify-content-center project-tabs" id="projectTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="tab-movie" data-toggle="tab" href="#pane-movie" role="tab" aria-controls="pane-movie" aria-selected="true">
+              Movie Ticket Booking System
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab-legaily" data-toggle="tab" href="#pane-legaily" role="tab" aria-controls="pane-legaily" aria-selected="false">
+              Legaily
+            </a>
+          </li>
+        </ul>
 
-          <!-- Project 1 -->
-          <div class="timeline-wrapper">
-            <div class="timeline-yr">
-              <span>2025</span>
-            </div>
-            <div class="timeline-info">
-              <h3><span>SENSAI – AI Career Coach for Future Success</span>
-                <small>Next.js, Clerk, GenAI APIs, Neon (PostgreSQL), ShadCN</small>
-              </h3>
-              <ul>
-                <p>Developed a career coaching platform providing industry insights refreshed weekly.</p>
-                <p>Implemented features like resume builder, cover letter generation, and AI-driven mock interviews.</p>
-                <p>Designed a scalable backend with PostgreSQL and a responsive UI with ShadCN, improving accessibility across devices.</p>
-              </ul>
-              <!-- Project Links -->
-              <p>
-                <a href="https://sensai-pi-three.vercel.app/" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
-                <a href="https://github.com/Abhi-Sharma/SENSAI" target="_blank" class="btn btn-sm btn-outline-primary ml-2">GitHub</a>
-              </p>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="timeline-wrapper">
-            <div class="timeline-yr">
-              <span>2024</span>
-            </div>
-            <div class="timeline-info">
-              <h3><span>Movie Ticket Booking System</span>
+        <div class="tab-content project-tab-content" id="projectTabsContent">
+          <div class="tab-pane fade show active" id="pane-movie" role="tabpanel" aria-labelledby="tab-movie">
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="mb-1">Movie Ticket Booking System</h3>
                 <small>Node.js, Express, MySQL, JWT, HtmlPdf.js</small>
-              </h3>
-              <ul>
-                <p>Developed a full-stack web application for online movie ticket booking using Node.js and Express, enabling users to browse movies, select seats, and make secure bookings.</p>
-                <p>Implemented user login and admin dashboard using secure authentication and MySQL for role-based access control.</p>
-                <p>Used technologies such as JWT Authentication for secure login and HtmlPdf.js for PDF generation and downloading of tickets.</p>
-                <p>Enabled admins to add, delete, and view users, theatres, and movies, while users can book movie tickets efficiently.</p>
+              </div>
+
+              <ul class="project-bullets">
+                <li>Full-stack movie booking web app with secure seat selection and booking flow.</li>
+                <li>User authentication with JWT and a role-based admin dashboard using MySQL.</li>
+                <li>Ticket PDF generation and download using HtmlPdf.js.</li>
+                <li>Admin management for users, theatres, and movies; users can book tickets.</li>
               </ul>
-              <!-- Project Links -->
-              <p>
-                <a href="https://github.com/Abhi-Sharma/Movie-Ticket-Booking-System" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
-              </p>
+
+              <div class="project-links mt-4">
+                <a
+                  href="https://github.com/Abhi-Sharma/Movie-Ticket-Booking-System"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-sm btn-primary"
+                >
+                  GitHub
+                </a>
+              </div>
+
+              <div class="project-tags mt-3">
+                <span class="tag">Authentication</span>
+                <span class="tag">Role-based Access</span>
+                <span class="tag">Ticket PDFs</span>
+              </div>
             </div>
           </div>
 
+          <div class="tab-pane fade" id="pane-legaily" role="tabpanel" aria-labelledby="tab-legaily">
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="mb-1">Legaily (Legal Document AI Assistant)</h3>
+                <small>JWT, HtmlPdf.js, Legal Document Automation</small>
+              </div>
+
+              <ul class="project-bullets">
+                <li>AI-powered platform to translate, summarize, and simplify legal documents in multiple Indian languages.</li>
+                <li>JWT-secured login for secure access and role-based views.</li>
+                <li>PDF generation and downloading for legal outputs using HtmlPdf.js.</li>
+                <li>Drafts module to auto-generate templates (affidavits, notices, contracts) using dynamic case inputs.</li>
+                <li>Advocates Diary with persistent calendar scheduling and contextual popups.</li>
+              </ul>
+
+              <div class="project-links mt-4">
+                <a
+                  href="https://github.com/Abhi-Sharma/legaily"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-sm btn-primary"
+                >
+                  GitHub
+                </a>
+              </div>
+
+              <div class="project-tags mt-3">
+                <span class="tag">Legal AI</span>
+                <span class="tag">Doc Summaries</span>
+                <span class="tag">Diary Scheduling</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -169,29 +222,21 @@ at MSRIT, passionate about building scalable web applications and solving comple
                 <div class="col-lg-6 col-12">
                   <h2 class="mb-4">Experiences</h2>
 
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2024</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Web Developer</span><small>Unified Mentor</small></h3>
-                                  <p>Developed and maintained responsive web applications using
-                                    modern web technologies..</p>
-                             </div>
-                        </div>
+                    <div class="experience-card">
+                      <div class="experience-head">
+                        <h3 class="mb-1">
+                          Unified Mentor Ltd.
+                          <small>Web Developer Intern</small>
+                        </h3>
+                        <small class="experience-dates">June 2024 - July 2024</small>
+                      </div>
 
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2024</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Web Developer</span><small>InternPe</small></h3>
-                                <p>Worked on designing and developing interactive web pages
-                                  using HTML, CSS, and JavaScript.</p>
-                            </div>
-                        </div>
-
+                      <ul class="experience-bullets">
+                        <li>Contributed as a frontend developer and helped strengthen front-end design & code structure.</li>
+                        <li>Built small web projects like Calculator, Tic-Tac-Toe, Currency Converter, and Gym Management System using HTML, CSS, and JavaScript.</li>
+                        <li>Implemented user authentication using JSON Web Tokens (JWT) to ensure secure access across the platform.</li>
+                        <li>Used GitHub for versioning and collaborative development workflow.</li>
+                      </ul>
                     </div>
                 </div>
 
@@ -258,52 +303,69 @@ at MSRIT, passionate about building scalable web applications and solving comple
       <div class="col-lg-12 col-12">
         <h2 class="mb-4">My Skills</h2>
 
-        <div class="timeline">
-
-          <!-- Languages -->
-          <div class="timeline-wrapper">
-            <div class="timeline-yr">
-              <span>01</span>
-            </div>
-            <div class="timeline-info">
-              <h3><span>Languages</span></h3>
-              <p>C, C++, Python, HTML/CSS, JavaScript, SQL</p>
-            </div>
-          </div>
-
-          <!-- Frameworks & Libraries -->
-          <div class="timeline-wrapper">
-            <div class="timeline-yr">
-              <span>02</span>
-            </div>
-            <div class="timeline-info">
-              <h3><span>Frameworks & Libraries</span></h3>
-              <p>React.js, Next.js, Node.js</p>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Coursework</h3>
+            <div class="skill-chips">
+              <span class="chip">Data Structures &amp; Algorithms (DSA)</span>
+              <span class="chip">OOP</span>
+              <span class="chip">Operating Systems</span>
+              <span class="chip">DBMS</span>
+              <span class="chip">Computer Networks</span>
+              <span class="chip">System Design</span>
             </div>
           </div>
 
-          <!-- Databases & Tools -->
-          <div class="timeline-wrapper">
-            <div class="timeline-yr">
-              <span>03</span>
-            </div>
-            <div class="timeline-info">
-              <h3><span>Databases & Tools</span></h3>
-              <p>MongoDB, Git, Linux</p>
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-chips">
+              <span class="chip">C++</span>
+              <span class="chip">C</span>
+              <span class="chip">Python (Basics for data visualization)</span>
             </div>
           </div>
 
-          <!-- Coursework -->
-          <div class="timeline-wrapper">
-            <div class="timeline-yr">
-              <span>04</span>
-            </div>
-            <div class="timeline-info">
-              <h3><span>Coursework</span></h3>
-              <p>Data Structures & Algorithms (DSA), OOP, Operating Systems, DBMS, System Design</p>
+          <div class="skill-category">
+            <h3>Web Development</h3>
+            <div class="skill-chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
             </div>
           </div>
 
+          <div class="skill-category">
+            <h3>Databases</h3>
+            <div class="skill-chips">
+              <span class="chip">SQL</span>
+              <span class="chip">MySQL (Relational)</span>
+              <span class="chip">MongoDB (Non-Relational)</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Developer Tools</h3>
+            <div class="skill-chips">
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <div class="skill-chips">
+              <span class="chip">Communication</span>
+              <span class="chip">Teamwork</span>
+              <span class="chip">Problem-Solving</span>
+              <span class="chip">Adaptability</span>
+              <span class="chip">Time Management</span>
+              <span class="chip">Creativity</span>
+              <span class="chip">Leadership</span>
+              <span class="chip">Empathy</span>
+              <span class="chip">Hardworking</span>
+              <span class="chip">Fast Learner</span>
+              <span class="chip">Discipline</span>
+            </div>
+          </div>
         </div>
       </div>
 

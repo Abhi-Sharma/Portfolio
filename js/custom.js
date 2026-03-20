@@ -19,12 +19,19 @@
 	    nav:true
 	});
 
-    // SMOOTHSCROLL
+    // SMOOTHSCROLL (only navbar links)
+    // Note: Project tabs also use `.nav-link`, so we must exclude them to prevent scroll jumps.
     $(function() {
-      $('.nav-link, .custom-btn-link').on('click', function(event) {
+      $('.navbar .nav-link, .custom-btn-link').on('click', function(event) {
+        const href = $(this).attr('href');
+        if (!href || href.indexOf('#') !== 0) return;
+
         var $anchor = $(this);
+        const $target = $(href);
+        if ($target.length === 0) return;
+
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 49
+          scrollTop: $target.offset().top - 49
         }, 1000);
         event.preventDefault();
       });
